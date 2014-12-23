@@ -5,6 +5,12 @@ f = lambda x: 2*x
 #: E731:2:5
 while False:
     this = lambda y, z: 2 * x
+#: E713
+if not (X) in Y:
+    pass
+#: E713
+if not X() in Y:
+    pass
 #: Okay
 f = object()
 f.method = lambda: 'Method'
